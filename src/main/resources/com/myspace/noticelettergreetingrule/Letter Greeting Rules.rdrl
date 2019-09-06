@@ -1,0 +1,9 @@
+package com.myspace.noticelettergreetingrule;
+
+import java.lang.Number;
+
+rule "Letter Greeting Rules"
+	dialect "mvel"
+	when
+	then
+end
