@@ -7,5 +7,9 @@ import com.myspace.noticedatamodel.PPD;
 rule "Letter Greeting Rules"
 	dialect "mvel"
 	when
+		PPD( coverageTypeCode == "A" )
 	then
+		LetterGreetingOutput fact0 = new LetterGreetingOutput();
+		fact0.setLgCode( "LG 1.0" );
+		insert( fact0 );
 end
