@@ -1,6 +1,8 @@
 package com.myspace.noticelettergreetingrule;
 
 import java.lang.Number;
+import com.myspace.noticedatamodel.LetterGreetingOutput;
+import com.myspace.noticedatamodel.PPD;
 
 rule "Letter Greeting Rules"
 	dialect "mvel"
