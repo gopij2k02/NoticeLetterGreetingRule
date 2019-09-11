@@ -1,0 +1,15 @@
+package com.myspace.noticelettergreetingrule;
+
+import java.lang.Number;
+import com.myspace.noticedatamodel.LetterGreetingOutput;
+import com.myspace.noticedatamodel.PPD;
+
+rule "LG 1.1 Rule"
+	dialect "mvel"
+	when
+		PPD( letterCode == "NOTI" , kidscareSwitch == "OPEN" , programCode == "MA" , flagALTCS == false , flagCSRA == false )
+	then
+		LetterGreetingOutput fact0 = new LetterGreetingOutput();
+		fact0.setLgCode( "LG1" );
+		insert( fact0 );
+end
