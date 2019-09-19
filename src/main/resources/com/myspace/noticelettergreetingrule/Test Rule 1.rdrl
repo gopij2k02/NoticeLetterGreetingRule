@@ -4,7 +4,7 @@ import java.lang.Number;
 import com.myspace.noticedatamodel.LetterGreetingOutput;
 import com.myspace.noticedatamodel.PPD;
 
-rule "LG 1 Rule"
+rule "Test Rule 1"
 	dialect "mvel"
 	when
 		PPD( letterCode == "TEST" , kidscareSwitch == "OPEN" , programCode == "MA" , flagALTCS == false , flagCSRA == false )
